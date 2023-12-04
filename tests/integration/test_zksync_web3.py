@@ -470,7 +470,7 @@ class ZkSyncWeb3Tests(TestCase):
         self.assertEqual(0, value)
         print(f"Call method for deployed contract, address: {contract_address}, value: {value}")
 
-    @skip("web3py 6.0.0 does not provide protocol version")
+    @skip("web3py 6.2.0 does not provide protocol version")
     def test_protocol_version(self):
         version = self.web3.zksync.protocol_version
         print(f"Protocol version: {version}")
